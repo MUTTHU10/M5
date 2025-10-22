@@ -227,33 +227,41 @@ Thus the C program to String process executed successfully
 
 
 
-# EX -25 –DISPLAYING ARRAYS USING POINTERS
+# EX -25 –POINTERS
 ## AIM
 
-Write a c program to read and display an array of any 6 integer elements using pointer
+write a c program to find factorial of the given number using pointer:
 
 ## ALGORITHM
 Step 1: Start the program.
-Step 2: Declare the following:
-•	Integer variable i for iteration.
-•	Integer variable n to store the number of elements.
-•	Integer array arr[10] to hold up to 10 elements.
-•	Integer pointer parr and initialize it to point to the array arr.
-Step 3: Read the value of n (number of elements) from the user.
-Step 4: Loop from i = 0 to i < n:
-•	Read an integer value and store it in the address parr + i using pointer arithmetic.
-Step 5: Loop from i = 0 to i < n:
-•	Print the element at *(parr + i) using pointer dereferencing.
-Step 6: End the program.
+Step 2: Declare a integer, use scanf to get the input from the user.
+Step 3: Use integer pointer to point the address of the integer.
+Step 4: use for loop to find the factorial.
+Step 5: End the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+int main()
+{
+    int num,ind,res=1;
+    int *ptr=&num;
+    scanf("%d",ptr);
+    for (ind=1;ind<=*ptr;ind++)
+    {
+        res=res*ind;
+    }
+    printf("Factorial of entered number is : %d",res);
+}
+```
 
 ## OUTPUT
+<img width="991" height="292" alt="Screenshot 2025-10-22 083426" src="https://github.com/user-attachments/assets/0f29846c-fb55-4012-adf2-7d87bdf9b70c" />
 
  
 
 ## RESULT
 
-Thus the C program to read and display an array of any 6 integer elements using pointer has been executed
+Thus the C program to find the factorial of the given number using pointer has been executed successfully.
 
 
